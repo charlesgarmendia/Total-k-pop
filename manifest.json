@@ -1,0 +1,18 @@
+{
+  "name": "TOTAL K-POP Global",
+  "short_name": "TotalKpop",
+  "description": "Tu portal VIP de noticias, videos y fotos de la cultura coreana.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0a",
+  "theme_color": "#bb86fc",
+  "icons": [
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
