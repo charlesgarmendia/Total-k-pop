@@ -222,13 +222,15 @@
     });
 
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./sw.js');
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js') // Quitamos el punto
+                .then(reg => console.log('SW registrado con éxito', reg))
+                .catch(err => console.log('Fallo al registrar SW', err));
+        });
     }
 </script>
 </body>
 </html>
-
-
 
 
 
